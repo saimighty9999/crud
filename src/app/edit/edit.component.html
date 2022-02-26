@@ -1,0 +1,32 @@
+<!-- <p>edit works!</p> -->
+
+<div class="container">
+    <div class="col-md-6">
+        <div class="card">
+            <h3>EditForm</h3>
+            <form #editform="ngForm" (ngSubmit)="edit(editform.value)">
+                <div>
+                    <label for="">productName</label>
+                    <input #productName="ngModel" type="text" [(ngModel)]="selectedProduct.productName" name="productName" ngModel >
+                </div>
+                <br>
+                <div>
+                    <label for="">productPrice</label>
+                    <input #productPrice="ngModel" type="number" [(ngModel)]="selectedProduct.productPrice" name="productPrice" ngModel>
+                </div>
+                <br>
+                <div>
+                    <label for="">productDescription</label>
+                    <input #productDescription="ngModel" type="text" [(ngModel)]="selectedProduct.productDescription" name="productDescription" ngModel id="">
+                </div>
+                <br>
+                <div>
+                    <label for="">productImageURL</label>
+                    <input #productImageURL="ngModel" type="text" [(ngModel)]="selectedProduct.productImageURL" name="productImageURL" ngModel id="">
+                </div>
+                <br>
+                <button type="btn">Edit</button>
+            </form> 
+        </div>
+    </div>
+</div>

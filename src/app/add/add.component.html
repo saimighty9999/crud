@@ -1,0 +1,27 @@
+<p>add works!</p>
+
+<div class="container">
+    <div class="col-md-6">
+        <div class="card">
+            <form #addform="ngForm" (ngSubmit)="add(addform)">
+                <div>
+                    <label for="">productName</label>
+                    <input #productName="ngModel" type="text" name="productName" ngModel id="">
+                </div>
+                <div>
+                    <label for="">productPrice</label>
+                    <input #productName="ngModel" type="number" name="productPrice" ngModel id="">
+                </div>
+                <div>
+                    <label for="">productDescription</label>
+                    <input #productName="ngModel" type="text" name="productDescription" ngModel id="">
+                </div>
+                <div>
+                    <label for="">productImageURL</label>
+                    <input #productName="ngModel" type="text" name="productImageURL" ngModel id="">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
